@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div section class="todo-list">
+            <h1>
+                Criar nova tarefa
+            </h1>
+            </section>
+            <div class="formulario">
+                <form>
+                    <div class="tarefa">
+                    <label for="tarefa">
+                        O que é a tarefa?
+                    </label>
+                    <input type="text" id="tarefa">
+                </div>
+                </form>
+
+            <form>
+                <div class="data">
+                <label for="data">
+                    Data final?
+                </label>
+                <input type="date" id="data">
+            </div>
+            </form>
+
+            <div class="dificuldade"></div>
+            <form>
+                <label for="dificuldade">
+                    Dificuldade?
+                </label>
+                <select id="dificuldade">
+                    <option value="facil">Fácil</option>
+                    <option value="medio">Médio</option>
+                    <option value="dificil">Difícil</option>
+                </select>
+            </div>
+            </form>
+
+        </div>
+        <div class="container">
+            <input type="button" id="btn" value="Criar tarefa">
+        </div>
+        <ul id="lista">
+            <li>
+                <div class="left-cont">
+                    <input type="checkbox" id="check-1" name="">
+                    <label for="check-1"></label>
+                    <span>Task-1</span>
+                </div>
+                <span class="remove"></span>
+            </li>
+        </ul>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
